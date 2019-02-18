@@ -7,6 +7,10 @@
 
   &-pop {
     z-index: 1;
+
+    .zent-pop-buttons {
+      vertical-align: middle;
+    }
   }
 
   &-group {
@@ -147,6 +151,27 @@
 
     &__text {
       font-size: 12px;
+    }
+
+    .item-remove {
+      position: absolute;
+      z-index: 2;
+      top: -8px;
+      right: -8px;
+      width: 18px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 16px;
+      color: $theme-stroke-9;
+      text-align: center;
+      cursor: pointer;
+      background: rgba($theme-stroke-1, 0.3);
+      border-radius: 50%;
+
+      &:hover {
+        color: $theme-stroke-9;
+        background: rgba($theme-stroke-1, 0.5);
+      }
     }
 
     .item-remove {
