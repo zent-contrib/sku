@@ -1,9 +1,8 @@
-import React, {Component} from 'react'
+import { flatten, isEqual } from './utils';
+import SKU from './SKU';
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+SKU.flatten = flatten;
+SKU.isSame = isEqual;
+SKU.isEqual = isEqual;
+
+export default SKU;
