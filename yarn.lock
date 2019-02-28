@@ -9065,10 +9065,10 @@ yeast@0.1.2:
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
   integrity sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 
-zent@7.0.0-next.3:
-  version "7.0.0-next.3"
-  resolved "https://registry.yarnpkg.com/zent/-/zent-7.0.0-next.3.tgz#46758544f801d3a918cc4abab5099e304c26fb8a"
-  integrity sha512-hx12dS6KWlUZ7gEaSUC5szLm85rAlkqLXaFr4MDIW6LupKNjnVxjGvemG3z/rCFBjnfZlsBSKbdIwwQhyzSjUA==
+zent@7.0.0-next.5:
+  version "7.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/zent/-/zent-7.0.0-next.5.tgz#b3becfd4f1a9fe6be7f228c46fa5c82f4974d052"
+  integrity sha512-oEcckm7Z7D+/hzVBZ6MExVg41AhBLhU0LPLNWfj0bFYUiEuwKh9onsqy0zBA3yNLfJehNtMGnqLNdvczUDvhsA==
   dependencies:
     "@babel/runtime" "^7.1.5"
     autosize "^4.0.0"
