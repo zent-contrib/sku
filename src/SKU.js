@@ -10,7 +10,6 @@ import SKUButton from './components/SKUButton';
 const noop = res => res;
 
 const noopPromise = () => new Promise(noop);
-
 class SKU extends PureComponent {
   static childContextTypes = {
     prefix: PropTypes.string,
@@ -39,6 +38,8 @@ class SKU extends PureComponent {
     onCreateSKU: PropTypes.func,
     onChange: PropTypes.func,
     prefix: PropTypes.string,
+    isShowAddSkuImage: PropTypes.bool,
+    customBtn: PropTypes.node
   };
 
   static defaultProps = {
@@ -56,6 +57,8 @@ class SKU extends PureComponent {
     onCreateSKU: noopPromise,
     onChange: noop,
     prefix: 'zent',
+    isShowAddSkuImage: true,
+    customBtn: null
   };
 
   constructor(props) {
@@ -140,7 +143,7 @@ class SKU extends PureComponent {
   }
 
   render() {
-    const { className, prefix, maxSize, onCreateGroup, disabled } = this.props;
+    const { className, prefix, maxSize, onCreateGroup, disabled, isShowAddSkuImage, customBtn } = this.props;
 
     const { skuTree, data } = this.state;
 
@@ -154,6 +157,7 @@ class SKU extends PureComponent {
                 index={index}
                 sku={item}
                 i18n={i18n}
+                isShowAddSkuImage={isShowAddSkuImage}
                 skuTree={skuTree}
                 onSKUChange={this.rebuildSKU(i18n)}
                 onSKUDelete={this.deleteSKU.bind(this, index)}
@@ -164,6 +168,7 @@ class SKU extends PureComponent {
               <SKUButton
                 onClick={this.addSKU}
                 i18n={i18n}
+                customBtn={ data.length ? customBtn : null}
                 disabled={disabled}
               />
             )}

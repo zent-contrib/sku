@@ -29,6 +29,11 @@
       font-size: 12px;
       line-height: 16px;
       font-weight: normal;
+
+      &__label {
+        display: inline-block;
+        width: 50px;
+      }
     }
 
     .group-remove {
@@ -43,7 +48,7 @@
       height: 18px;
       font-size: 14px;
       line-height: 16px;
-      background: rgba(white, 0.6);
+      background: rgba(153, 153, 153, 0.6);
       border-radius: 10px;
       text-indent: 0;
     }
@@ -99,21 +104,24 @@
       ul {
         & > li {
           float: left;
-          width: 20%;
           text-align: left;
+          width: 20%;
         }
+      }
+
+      &__label {
+        line-height: 30px;
+        width: 50px;
       }
     }
 
     .sku-add {
       display: inline-block;
-      padding: 0 5px;
-      margin: 9px 5px 0;
-      vertical-align: top;
       font-size: 12px;
       color: $theme-primary-2;
       text-decoration: none;
       cursor: pointer;
+      line-height: 30px;
     }
 
     .zent-sku-pop {
@@ -131,8 +139,6 @@
     padding: 5px;
     display: inline-block;
     margin-right: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
     width: 80px;
     vertical-align: middle;
     text-align: center;

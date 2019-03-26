@@ -10,7 +10,7 @@ class SKUButton extends PureComponent {
 
   render() {
     const prefix = `${this.context.prefix}-group`;
-    let { disabled, i18n } = this.props;
+    let { disabled, i18n, customBtn } = this.props;
     return (
       <div className={prefix}>
         <h3 className="group-title">
@@ -25,6 +25,9 @@ class SKUButton extends PureComponent {
               {i18n.buttonAdd}
             </Button>
           )}
+          {
+            customBtn ? customBtn : ''
+          }
         </h3>
       </div>
     );
