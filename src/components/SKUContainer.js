@@ -278,7 +278,7 @@ class SKUContainer extends PureComponent {
                       <div className="upload-img">
                         <span
                           className="item-remove"
-                          title={i18n.container.del}
+                          title="删除"
                           onClick={this.removeImg.bind(this, item[optionValue])}
                         >
                           ×
@@ -301,7 +301,7 @@ class SKUContainer extends PureComponent {
                           )}
                         >
                           <span className={cx(`${prefix}-item__text`)}>
-                            {i18n.container.replace}
+                            替换
                           </span>
                         </Upload>
                       </div>
@@ -332,7 +332,7 @@ class SKUContainer extends PureComponent {
               onConfirm={this.selectSKU}
               onClose={this.resetLeaf}
             >
-              <span className="sku-add">{i18n.container.add}</span>
+              <span className="sku-add">+添加</span>
             </Pop>
           ) : (
             ''

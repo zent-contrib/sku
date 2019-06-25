@@ -17,12 +17,12 @@ class SKUButton extends PureComponent {
           {typeof disabled === 'string' ? (
             <Pop trigger="hover" position="top-left" content={disabled}>
               <Button onClick={this.props.onClick} disabled={!!disabled}>
-                {i18n.buttonAdd}
+                添加规格项目
               </Button>
             </Pop>
           ) : (
             <Button onClick={this.props.onClick} disabled={!!disabled}>
-              {i18n.buttonAdd}
+              添加规格项目
             </Button>
           )}
         </h3>

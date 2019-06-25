@@ -111,7 +111,7 @@ class SKU extends PureComponent {
         (item, idx) => item[optionValue] === sku[optionValue] && index !== idx
       )
     ) {
-      Notify.error(i18n.notify);
+      Notify.error('规格名不能相同');
       data = [].concat(data);
       this.setState({ data });
       return false;
