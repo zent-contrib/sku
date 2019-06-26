@@ -1,6 +1,6 @@
 {
   "name": "@zent/sku",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scope": "zent",
   "description": "sku React component",
   "main": "lib/index.js",
