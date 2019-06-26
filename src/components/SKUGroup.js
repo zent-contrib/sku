@@ -124,10 +124,9 @@ class SKUGroup extends PureComponent {
   };
 
   render() {
-    let { sku, index, skuTree, i18n } = this.props;
+    let { sku, index, skuTree } = this.props;
     let { optionValue, optionText } = this.context;
     let { newSKUText, hasSKUImage } = this.state;
-
     const prefix = `${this.context.prefix}-group`;
 
     if (newSKUText) {
@@ -168,7 +167,6 @@ class SKUGroup extends PureComponent {
         </h3>
         <SKUContainer
           sku={{ ...sku }}
-          i18n={i18n}
           hasSKUImage={hasSKUImage}
           onSKULeafChange={this.onSKULeafChange}
         />

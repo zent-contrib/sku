@@ -207,7 +207,8 @@ class SKUContainer extends PureComponent {
 
   removeImg(id) {
     const { sku } = this.props;
-    let { optionValue } = this.context;
+    const { optionValue } = this.context;
+    
     sku.leaf.forEach(item => {
       if (item[optionValue] === id) {
         item.img_url = '';
@@ -218,7 +219,8 @@ class SKUContainer extends PureComponent {
 
   uploadSuccess(id, imageUrl) {
     const { sku } = this.props;
-    let { optionValue } = this.context;
+    const { optionValue } = this.context;
+
     sku.leaf.forEach(item => {
       if (item[optionValue] === id) {
         item.img_url = imageUrl[0].src;
@@ -228,9 +230,8 @@ class SKUContainer extends PureComponent {
   }
 
   render() {
-    let { optionValue, optionText, prefix } = this.context;
-
-    let { sku, hasSKUImage, i18n } = this.props;
+    const { optionValue, optionText, prefix } = this.context;
+    const { sku, hasSKUImage } = this.props;
 
     return (
       <div className="group-container">

@@ -10,7 +10,8 @@ class SKUButton extends PureComponent {
 
   render() {
     const prefix = `${this.context.prefix}-group`;
-    let { disabled, i18n } = this.props;
+    const { disabled } = this.props;
+
     return (
       <div className={prefix}>
         <h3 className="group-title">
