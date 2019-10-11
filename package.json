@@ -1,18 +1,16 @@
 {
   "name": "@zent/sku",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scope": "zent",
   "description": "sku React component",
-  "main": "lib/index.js",
+  "main": "es/index.js",
   "module": "es/index.js",
   "files": [
     "css",
-    "es",
-    "lib",
-    "umd"
+    "es"
   ],
   "scripts": {
-    "build": "nwb build-react-component --no-demo && ./scripts/replace-es-with-cjs.sh && npm run build-css --scripts-prepend-node-path",
+    "build": "nwb build-react-component --no-demo && npm run build-css --scripts-prepend-node-path",
     "build-css": "./scripts/build-css.sh",
     "clean": "nwb clean-module && nwb clean-demo && rm -rf css",
     "prepublishOnly": "npm run build --scripts-prepend-node-path",
@@ -37,7 +35,7 @@
     "nwb-sass": "^0.9.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "zent": "7.0.0-next.19"
+    "zent": "7.0.0-next.36"
   },
   "author": "",
   "license": "MIT",
